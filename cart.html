@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+</head>
+<body>
+    
+    <div class="logo">
+        <img src="Assets/Logos/mainlogo.png" class="head" >
+    </div>
+    <div class="container">
+        <h1>CART</h1>
+        
+        <!-- <br>
+        <h1>Payment Details</h1>
+        <div class="product_field">
+            <img src="logo.png" alt="image not found" style="border: #2691d9 solid; text-align: left;">
+            
+        </div> -->
+        <div class="product_field">
+            <img src="Assets/Images/Icicle Sparkle Sweater Dress.png" alt="Product Image" class="product_image">
+            <div class="product_details">
+                <h2>Sparkle Sweater Dress</h2>
+                <p>Price: $25.99</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1" class="product_quantity">
+            </div>
+        </div>
+        <div class="product_field">
+            <img src="Assets/Images/hawaiian shirt.png" alt="Product Image" class="product_image">
+            <div class="product_details">
+                <h2>Tropical Hawaiian Shirt</h2>
+                <p>Price: $25.99</p>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1" class="product_quantity">
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <h3>Summary</h3>
+        </div>
+        <div class="summary">
+            <p>1. Sparkle Sweater Dress</p>
+            <div class="price">$25.99</div>
+        </div>
+        <div class="summary">
+            <p>2. Tropical Hawaiian Shirt</p>
+            <div class="price">
+                <p>$25.99</p>
+            </div>
+        </div>
+        <div class="summary_price">
+            <p style="font-size: 23px;">Total</p>
+            <div class="total">
+                <p>$51.98</p>
+            </div>
+        </div>
+        <a href="payment.html">
+        <button>Proceed to Checkout</button>
+    </a>
+        
+        
+    </div>
+    <style>
+        
+        body{
+            background: linear-gradient(120deg, #A7D5BD , #86ce6f); 
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+        }
+        img{
+            width: 140px;
+            height: 200px;
+            margin-top: 10px;
+        }
+        
+        @font-face {
+            font-family: JMADH;
+            src: url(Assets/Fonts/JustMeAgainDownHere-Regular.ttf);
+        }
+        .container{
+            position: top;
+            width: 580px;
+            height: 1050px;
+            background: white;
+            border-radius: 10px;
+            top: 10px;
+  	        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            margin-bottom: 50px;
+            text-align: center;
+
+        }
+    
+        .container h1{
+            text-align: center;
+            align-items: center;
+            border-bottom: 1px solid silver;
+            /* height: 40px; */
+            font-size: 80px;
+            margin-bottom: 20px;
+            font-family: JMADH;
+
+        }
+
+        h3 {
+            text-align: center;
+            align-items: center;
+            border-bottom: 1px solid silver;
+            height: 40px;
+            font-size: 25px;
+        }
+        
+        button{
+            cursor: pointer;
+            border-top:none;
+            border-right:none;
+            border-left:none;
+            border-bottom: none;
+            border-radius: 100px; 
+            width: 290px; 
+            height: 60px;
+            font-size: 17px;
+            background-color: rgba(220, 220, 220, 0.521);
+            transition: background-color 0.2s ease;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color:  rgba(145, 145, 145, 0.329);
+        }
+        a{
+            color: #2691d9;
+        }
+        .product_field {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product {
+            text-align: center;
+            padding: 20px;
+        }
+        .summary {
+            display: flex;
+            align-items: center;
+            /* border-top: #A7D5BD solid; */
+
+            /* border-bottom: 2px silver solid; */
+            margin-bottom: 8px;
+        }
+        .summary_price {
+            display: flex;
+            align-items: center;
+            /* border-top: #A7D5BD solid; */
+            border-top: 3px silver solid;
+
+            border-bottom: 3px silver solid;
+            margin-bottom: 8px;
+        }
+        .summary_price p{
+            margin-left: 50px;
+        }
+        .summary p{
+            margin-left: 30px;
+        }
+        /* .price {
+            text-align: right;
+            margin-right: 0px;
+        } */
+        .price {
+            flex-grow: 1;
+            text-align: right;
+            margin-right: 50px; 
+            /* margin-left: 20px; */
+        }
+        .total {
+            flex-grow: 1;
+            text-align: right;
+            margin-right: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            
+
+        }
+        .total p{
+            margin-left: 200px;
+            font-size: 23px;
+        }
+        img {
+            width: 140px;
+            height: 200px;
+            margin-top: 10px;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        .product_field {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product_image {
+            width: 140px;
+            height: 190px;
+            margin-right: 20px;
+        }
+        
+        .product_details {
+            text-align: left;
+        }
+        .product_quantity label {
+            text-align: left;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .product_quantity {
+            width: 40%;
+            height: 25px;
+            font-size: 18px;
+            border: 1px solid #adadad;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    </style>
+    </body>
+</html>

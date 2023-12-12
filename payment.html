@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="Assets/Logos/mainlogo.png" >
+    </div>
+    <div class="container">
+        
+        <br>
+        <h1>Payment Details</h1>
+        <form method="POST" action="home.html">
+            <div class="txt_field">
+                <input type="text" name="name" placeholder="Full Name">
+            </div>
+            <div class="txt_field">
+                <input type="tel" name="contact" placeholder="Phone Number">
+            </div>
+            <div class="txt_field">
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="txt_field">
+                <input type="text" name="address" placeholder="Shipping Address">
+            </div>
+            <!-- <div class="txt_field">
+                <input type="password" name="cpassword" placeholder="Confirm Password" required>
+            </div> -->
+            <div class="payment-container">
+                <h2>Select Payment Method</h2>
+                
+                <input type="checkbox" id="cashOnDelivery">
+                <label for="cashOnDelivery">Cash on Delivery</label>
+        
+                <input type="checkbox" id="creditCard">
+                <label for="creditCard">Credit Card</label>
+        
+                <div id="cardDetails" class="card_input">
+                    <h3>Enter Credit Card Details</h3>
+                    <!-- Include your credit card form fields here -->
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" class="bordered-input">
+                    
+                    <label for="expiryDate">Expiry Date:</label>
+                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" class="bordered-input">
+                    
+                    <label for="cvv">CVV:</label>
+                    <input type="number" id="cvv" name="cvv" placeholder="123" class="bordered-input">
+                </div>
+            </div>
+            <br>
+            <button>Complete Order</button>
+        </form>
+    </div>
+    <style>
+        
+        body{
+            background: linear-gradient(120deg, #A7D5BD , #86ce6f); 
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+        }
+        img{
+            width: 140px;
+            height: 200px;
+            margin-top: 10px;
+        }
+    
+        .container{
+            position: relative;
+            width: 580px;
+            height: 900px;
+            background: white;
+            border-radius: 10px;
+            text-align: center;
+            top: 10px;
+  	        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            margin-bottom: 50px;
+
+        }
+    
+        .container h1{
+            text-align: center;
+            align-items: center;
+            border-bottom: 1px solid silver;
+            height: 40px;
+        }
+    
+        .container form{
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+    
+        .txt_field {
+            position: relative;
+            border-bottom: 2px solid #adadad;
+            margin: 30px;
+        }
+        input{
+            width: 100%;
+            height: 40px;
+            font-size: 16px;
+            border: none;
+            background: none;
+            outline: none;
+        }
+        button{
+            cursor: pointer;
+            border-top:none;
+            border-right:none;
+            border-left:none;
+            border-bottom: none;
+            border-radius: 100px; 
+            width: 290px; 
+            height: 60px;
+            font-size: 17px;
+            background-color: rgba(220, 220, 220, 0.521);
+            transition: background-color 0.2s ease;
+        }
+        button:hover {
+            background-color:  rgba(145, 145, 145, 0.329);
+        }
+        a{
+            color: #2691d9;
+        }
+        
+        .payment-container input[type="checkbox"] {
+            width: 20px; 
+            margin:0 10px;
+        }
+        input[type="checkbox"] {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        #cardDetails {
+            display: none;
+        }
+
+        #creditCard:checked ~ #cardDetails {
+            display: block;
+        } 
+        
+        .card_input label {
+            text-align: left;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .bordered-input {
+            width: 100%;
+            height: 40px;
+            font-size: 18px;
+            border: 1px solid #adadad;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        /* .card_input{
+            position: relative;
+            border-bottom: 2px solid #adadad;
+            margin: 30px;
+        } */
+    </style>
+    </body>
+</html>

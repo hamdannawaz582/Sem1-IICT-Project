@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="Assets/Icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Assets/Icons/favicon.ico" type="image/x-icon">
+    <title>Login Form</title>
+</head>
+
+<body>
+
+    <div class="loginpage">
+        <div class="login-container">
+            <div class="login">
+                <!-- <h2>Login</h2><br> -->
+                <form id="login" method="get" action="home.html">
+                    <br>
+                    <br>
+                    <!-- <br> -->
+                    <img src="Assets/Logos/mainlogo.png" >
+                    <br>
+                    <br>
+                    <br>
+                    <input type="email" placeholder="Email">
+                    <br><br>
+                    <input type="Password" placeholder="Password">
+                    <br><br>
+                    <a href="home.html">Forgot your password?</a>
+                    <br><br>
+                    
+                    <a href="home.html">
+                    <button>Log In</button>
+                    </a>
+                    <br>
+                    
+                    
+                    <br>
+                    <p>Don't have an account ? <a href="signup.html">Sign up</a></p>
+                    
+                    
+                </form>
+            </div>
+            <div class="logininfo">
+                <!-- <img src="logo.png" > -->
+                <h1>Kapre</h1>
+                <p>Step into the world of Kapre. Log in to explore your personalized style journey, exclusive offers, and seamless shopping experience. Your gateway to fashion awaits.</p>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            margin: 0;
+            background-size: cover;
+            font-family: "JustMeAgainDownHere-Regular";
+            background: linear-gradient(120deg,  #A7D5BD, #86ce6f); 
+
+        }
+        @font-face {
+            font-family: JMADH;
+            src: url(Assets/Fonts/JustMeAgainDownHere-Regular.ttf);
+        }
+        h1 {
+            font-family: JMADH;
+            font-size: 80px;
+        }
+
+        .loginpage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            display: flex;
+            border-radius: 15px;
+  	        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	        position: relative;
+	        overflow: hidden;
+	        height: 580px;
+            /* height: 70%; */
+            margin-top: 90px;
+            margin-bottom: 90px;
+            margin-left: 90px;
+            margin-right: 90px;
+
+        }
+
+        .login {
+            width: 400px;
+            padding: 20px;
+            background-color: #A7D5BD;
+            border: 1px solid #ccc;
+            margin-right: 0px;
+            text-align: center;
+            
+        }
+        p{
+            color: #5c5858;
+        }
+
+        .logininfo {
+            text-align: center;
+
+            width: 400px;
+            padding: 20px;
+            background-color: #F8F6F4;
+            border: 1px solid #ccc;
+        }
+        input {
+            background-color:#A7D5BD;
+            width: 300px; 
+            height: 22px;
+            border-top:none;
+            border-right:none;
+            border-left:none;
+            outline: none;
+            font-size: 16px;
+            margin: 5px;
+
+        }
+        h2 {
+            color: black;     
+            font-size:40px;    
+        }
+
+        span {
+            color: darkslategray;
+        }
+        button{
+            border-top:none;
+            border-right:none;
+            border-left:none;
+            border-bottom: none;
+            border-radius: 100px; 
+            width: 130px; 
+            height: 40px;
+            cursor: pointer;
+            color: #000000;
+            font-size: 14px;
+            background-color: white;
+            transition: background-color 0.2s ease;
+
+
+        }
+        button:hover {
+            background-color: gainsboro;
+        }
+        a{
+                color: #2691d9;
+                cursor: pointer;
+        }
+        img {
+            width: 140px;
+            height: 200px;
+        }
+
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+.header-bg {
+    background-color: #A7D5BD;
+}
+
+.button-bg {
+    background-color: #F8F6F4;
+    
+}
+
+@font-face {
+    font-family: JMADH;
+    src: url(Assets/Fonts/JustMeAgainDownHere-Regular.ttf);
+}
+
+.company-font {
+    font-family: JMADH;
+}
+
+.title-font{
+    margin-left: 10px;
+    font-size: xx-large;
+    font-family: JMADH;
+}
+
+.title-logo {
+    margin-left: 20%;
+
+}
+
+.search-bar {
+    margin-left: 2%;
+}
+
+.input-search {
+    height: 40;
+    width: 35%;
+    
+}
+
+.navbar-flex {
+    display: flex;
+    align-items: center;
+    height: 5;
+}
+
+.navbar-item {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.carousel-image {
+    height: 90vh;
+}
+
+.featured-seperator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-seperator-line {
+    width: 40%;
+    border-bottom: 2px solid #3d3d3d;
+}
+
+.featured-seperator-text {
+    padding: 0 10px;
+    color: #000000;
+    font-size: 30px;
+    font-family: JMADH;
+}
+
+.heading-font {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.featured-cards {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card-button {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 49%;
+    background-color: #F8F6F4;
+    border-radius: 10px;
+    border-color: #E9E9ED;
+}
+
+.card-button:hover {
+    background-color:#E9E9ED;
+}
+
+.welcome-title {
+    font-size: 4rem;
+}
+
+.welcome-text {
+    font-size: 25px;
+    font-family: Helvetica;
+}
+
+.welcome-logo {
+    margin-right: 10px;
+}
+
+.body-bg {
+    background-color: #F8F6F4;
+}
+
+.description-text {
+    font-family: Helvetica;
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 20px;
+}
+
+.footer {
+    background-color: #1A023D;
+    color:#F8F6F4;
+}
+
+.contact-info {
+    font-family: Helvetica;
+    font-size: 18px;
+}
+
+.social-tag {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.category-banner {
+    height: 50vh;
+    width: 100%;
+}
+
+.search-button:hover {
+    background-color:#E9E9ED;
+}
+
+.dropend:hover>.dropdown-menu {
+    display: block;
+    margin-left: 100px;
+}
+
+.custom-link {
+    color: #000000; 
+    text-decoration: none; 
+    margin-left: 0;
+}
+
+.dropdown-item:active {
+    background-color: #A7D5BD;
+}
+
+.filters {
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+.filter-title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.products-body {
+    margin: 20px;
+}
+
+.filter-button:hover {
+    background-color: #E9E9ED;
+    border-color: #1A023D;
+}
+
+.filter-button {
+    margin-top: 10px;
+    border-color: #1A023D;
+}
+
+.btn.active {
+    background-color: #A7D5BD;
+    border-color: #1A023D;
+}
+
+.btn.active:hover {
+    background-color: #92b9a5;
+    border-color: #1A023D;
+}
+
+
+
+.vertical-line {
+    border-right: 3px solid #E9E9ED; /* Set your desired line color */
+    height: 100vh; /* Adjust the height according to your layout */
+    padding-right: 40px;
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.price-tag {
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: bold;
+}
